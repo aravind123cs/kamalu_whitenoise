@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 260 43% 97%; /* Very light lavender */
+    --foreground: 260 10% 20%; /* Darker for text */
+
+    --card: 260 40% 99%; /* Slightly whiter than background */
+    --card-foreground: 260 10% 20%;
+
+    --popover: 260 40% 99%;
+    --popover-foreground: 260 10% 20%;
+
+    --primary: 261 36% 83%; /* Soft lavender */
+    --primary-foreground: 261 36% 15%; /* Darker for text on primary */
+
+    --secondary: 260 30% 90%; /* A slightly darker lavender for secondary elements */
+    --secondary-foreground: 260 10% 15%;
+
+    --muted: 260 30% 92%;
+    --muted-foreground: 260 10% 35%;
+
+    --accent: 207 48% 80%; /* Pale blue */
+    --accent-foreground: 207 48% 15%; /* Darker for text on accent */
+
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 260 20% 88%;
+    --input: 260 20% 92%;
+    --ring: 261 36% 75%; /* Related to primary for focus rings */
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables - can remain default or be adjusted if sidebar is used extensively */
+    --sidebar-background: 260 40% 96%;
+    --sidebar-foreground: 260 10% 25%;
+    --sidebar-primary: 261 36% 75%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 261 36% 88%;
+    --sidebar-accent-foreground: 261 36% 15%;
+    --sidebar-border: 260 20% 85%;
+    --sidebar-ring: 261 36% 70%;
+  }
+
+  .dark {
+    /* For a dark theme, these would be inverted or use a different calming dark palette */
+    --background: 260 10% 10%;
+    --foreground: 260 10% 90%;
+
+    --card: 260 10% 15%;
+    --card-foreground: 260 10% 90%;
+
+    --popover: 260 10% 15%;
+    --popover-foreground: 260 10% 90%;
+
+    --primary: 261 36% 60%; /* Darker soft lavender */
+    --primary-foreground: 261 36% 95%; 
+
+    --secondary: 260 10% 25%;
+    --secondary-foreground: 260 10% 90%;
+
+    --muted: 260 10% 22%;
+    --muted-foreground: 260 10% 60%;
+
+    --accent: 207 40% 55%; /* Darker pale blue */
+    --accent-foreground: 207 40% 95%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 260 10% 30%;
+    --input: 260 10% 28%;
+    --ring: 261 36% 50%;
+    
+    --sidebar-background: 260 10% 12%;
+    --sidebar-foreground: 260 10% 88%;
+    --sidebar-primary: 261 36% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 261 10% 20%;
+    --sidebar-accent-foreground: 260 10% 88%;
+    --sidebar-border: 260 10% 25%;
+    --sidebar-ring: 261 36% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
