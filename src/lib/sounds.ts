@@ -11,4 +11,5 @@ export const sounds: Sound[] = [
   { id: 'white-noise-2', name: 'White Noise 2', src: './noise_2.mp3' }, // Rain sound, 2min
   { id: 'white-noise-3', name: 'White Noise 3', src: './noise_3.mp3' }, // Rain sound, 2min
   { id: 'white-noise-4', name: 'White Noise 4', src: './noise_4.mp3' }, // Rain sound, 2min
+  { id: 'white-noise-5', name: 'White Noise 5', src: './noise_5.mp3' }, // Rain sound, 2min
 ];
